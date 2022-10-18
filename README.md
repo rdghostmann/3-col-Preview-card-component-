@@ -1,1 +1,1 @@
-# 3-col-Preview-card-component-
+# 3-column-card-component
