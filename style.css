@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Verylight-gray: hsl(0, 0%, 95%);
+    --Transparent-white: hsla(0, 0%, 100%, 0.75);
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+}
+
+p {
+    font-size: 15px;
+    font-family: 'Lexend Deca', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    color: var(--Transparent-white);
+}
+
+h1 {
+    font-family: 'Big Shoulders Display', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: var(--Transparent-white);
+}
+
+@media only screen and (min-width: 375px) {
+    body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Verylight-gray);
+   }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 375px;
+        background-color: var(--Verylight-gray);
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .row {
+        margin: 100px auto;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 85%;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .icon {
+        width: 100px;
+        height: 50px;
+    }
+
+    .col-3 {
+        flex-basis: 30%;
+        padding: 40px 35px 60px 35px;
+    }
+
+    .col-3 h1 {
+        color: var(--Verylight-gray);
+        padding: 25px 0;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    .col-3 p {
+        color: var(--Verylight-gray);
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 25px;
+        margin-bottom: 60px;
+    }
+
+    .col-3 a {
+        text-decoration: none;
+        background-color: var(--Verylight-gray);
+        width: 90%;
+        padding: 15px 30px;
+        border-radius: 25px;
+        font-size: 15px;
+        font-weight: 700;
+    }
+
+    .Sedans {
+        background-color: var(--Bright-orange);
+    }
+
+    .SUVs {
+        background-color: var(--Dark-cyan);
+    }
+
+    .Luxury {
+        background-color: var(--Very-dark-cyan);
+    }
+
+    .Sedans a {
+        color: hsl(31, 77%, 52%);
+        font-family: 'Lexend Deca', sans-serif;
+        background-color: var(--Verylight-gray);
+        border: 2px solid var(--Verylight-gray);
+        transition: all 0.6s;
+    }
+
+    .SUVs a {
+        color: hsl(184, 100%, 22%);
+        font-family: 'Lexend Deca', sans-serif;
+        background-color: var(--Verylight-gray);
+        border: 2px solid var(--Verylight-gray);
+        transition: all 0.6s;
+    }
+
+    .Luxury a {
+        color: hsl(179, 100%, 13%);
+        font-family: 'Lexend Deca', sans-serif;
+        background-color: var(--Verylight-gray);
+        border: 2px solid var(--Verylight-gray);
+        transition: all 0.6s;
+    }
+
+    /* HOVER STATE */
+    .Sedans a:hover {
+        color: var(--Verylight-gray);
+        background-color: var(--Bright-orange);
+        border: 2px solid var(--Verylight-gray);
+    }
+
+    .SUVs a:hover {
+        color: var(--Verylight-gray);
+        background-color: var(--Dark-cyan);
+        border: 2px solid var(--Verylight-gray);
+
+    }
+
+    .Luxury a:hover {
+        color: var(--Verylight-gray);
+        background-color: var(--Very-dark-cyan);
+        border: 2px solid var(--Verylight-gray);
+
+    }
+
+
+}
+
+@media only screen and (min-width: 1440px) {
+    body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Verylight-gray);
+   }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 1440px;
+        background-color: var(--Verylight-gray);
+    }
+    .container {
+        width: 100%;
+        height: 100vh;
+        display: grid;
+        place-items: center;
+        border: 1px solid transparent;
+    }
+
+    .row {
+        margin: 100px auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 60%;
+        height: 443px;
+        border-radius: 10px;
+        overflow: hidden;
+        border: 1px solid transparent;
+    }
+
+    .col-3 {
+        flex-basis: 33.333%;
+        padding: 40px 35px 60px 35px;
+        border: 1px solid transparent;
+        overflow: hidden;
+
+    }
+
+    .icon {
+        width: 100px;
+        height: 50px;
+    }
+
+    .col-3 h1 {
+        color: var(--Verylight-gray);
+        padding: 25px 0;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    .col-3 p {
+        color: var(--Verylight-gray);
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 25px;
+        margin-bottom: 60px;
+    }
+
+    .col-3 a {
+        text-decoration: none;
+        background-color: var(--Verylight-gray);
+        width: 90%;
+        padding: 15px 30px;
+        border-radius: 25px;
+        font-size: 15px;
+        font-weight: 700;
+    }
+
+    
+    .Sedans {
+        background-color: var(--Bright-orange);
+        color: hsl(31, 77%, 52%);
+    }
+
+    .SUVs {
+        background-color: var(--Dark-cyan);
+        color: hsl(184, 100%, 22%);
+    }
+
+    .Luxury {
+        background-color: var(--Very-dark-cyan);
+        color: hsl(179, 100%, 13%);
+    }
+
+    .Sedans a {
+        color: hsl(31, 77%, 52%);
+        background-color: var(--Verylight-gray);
+        border: 2px solid var(--Verylight-gray);
+        transition: all 0.6s;
+    }
+
+    .SUVs a {
+        color: hsl(184, 100%, 22%);
+        background-color: var(--Verylight-gray);
+        border: 2px solid var(--Verylight-gray);
+        transition: all 0.6s;
+    }
+
+    .Luxury a {
+        color: hsl(179, 100%, 13%);
+        background-color: var(--Verylight-gray);
+        border: 2px solid var(--Verylight-gray);
+        transition: all 0.6s;
+    }
+
+    /* HOVER STATE */
+    .Sedans a:hover {
+        color: var(--Verylight-gray);
+        background-color: var(--Bright-orange);
+        border: 2px solid var(--Verylight-gray);
+    }
+
+    .SUVs a:hover {
+        color: var(--Verylight-gray);
+        background-color: var(--Dark-cyan);
+        border: 2px solid var(--Verylight-gray);
+
+    }
+
+    .Luxury a:hover {
+        color: var(--Verylight-gray);
+        background-color: var(--Very-dark-cyan);
+        border: 2px solid var(--Verylight-gray);
+
+    }
+
+    
+
+
+    
+
+
+  
+}
